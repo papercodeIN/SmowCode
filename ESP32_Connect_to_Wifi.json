@@ -1,1 +1,94 @@
-[{"type":"system","config_props":{"global_vars":[]}},{"id":"fb2fb7de.d68d08","type":"tab","label":"main","disabled":false,"info":""},{"id":"8978f714.3bbac8","type":"common/1/on start","z":"fb2fb7de.d68d08","config_props":{"name":""},"outputProps":{},"dependency_set":{},"x":130,"y":160,"wires":[["99159d1.25cfe6"]]},{"id":"99159d1.25cfe6","type":"smow_wifi/1/wifi start","z":"fb2fb7de.d68d08","config_props":{"name":"","config":"efe90283.52938","ssid":"\"Capgemini_4G\"","password":"\"MN704116\""},"outputProps":{},"outputs":[{"variables":[{"name":"Success Code","value":"success_code"}]}],"dependency_set":{},"x":340,"y":160,"wires":[["4cb6df8b.f58b"]]},{"id":"4cb6df8b.f58b","type":"smow_serial/1/display","z":"fb2fb7de.d68d08","config_props":{"name":"","text":"\"success_code\""},"outputProps":{},"dependency_set":{},"x":600,"y":160,"wires":[[]]},{"id":"efe90283.52938","type":"smow_wifi/1/wifi","z":"fb2fb7de.d68d08","config_props":{"name":"Wifi","init_nvs_netif_evt_loop":"true","init_nvs":"true","auth_mode":"1","pmf_capable":"true","pmf_required":"false","wifi_channel":"1","static_ip":"false","ip_address":"\"192.168.1.100\"","subnet_mask":"\"255.255.255.0\"","default_gateway":"\"192.168.1.1\"","dns1":"\"8.8.8.8\"","dns2":"\"8.8.4.4\""},"outputProps":{},"dependency_set":{"ip_static":false}}]
+[
+    {
+        "type": "system",
+        "config_props": {
+            "global_vars": []
+        }
+    },
+    {
+        "id": "453a7cf5.9b0a04",
+        "type": "tab",
+        "label": "main",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "66fbf348.64795c",
+        "type": "common/1/on start",
+        "z": "453a7cf5.9b0a04",
+        "config_props": {
+            "name": ""
+        },
+        "outputProps": {},
+        "dependency_set": {},
+        "x": 430,
+        "y": 280,
+        "wires": [
+            [
+                "d532203f.ff2e9"
+            ]
+        ]
+    },
+    {
+        "id": "d532203f.ff2e9",
+        "type": "smow_wifi/1/wifi start",
+        "z": "453a7cf5.9b0a04",
+        "config_props": {
+            "name": "",
+            "config": "90ec797.2469a88",
+            "ssid": "\"Capgemini_4G\"",
+            "password": "\"MN704116\""
+        },
+        "outputProps": {},
+        "outputs": [
+            {
+                "variables": [
+                    {
+                        "name": "Success Code",
+                        "value": "success_code"
+                    }
+                ]
+            }
+        ],
+        "dependency_set": {},
+        "x": 660,
+        "y": 280,
+        "wires": [
+            [
+                "8781569b.769e98"
+            ]
+        ]
+    },
+    {
+        "id": "8781569b.769e98",
+        "type": "smow_serial/1/display",
+        "z": "453a7cf5.9b0a04",
+        "config_props": {
+            "name": "",
+            "text": "success_code"
+        },
+        "outputProps": {},
+        "dependency_set": {},
+        "x": 940,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90ec797.2469a88",
+        "type": "smow_wifi/1/wifi",
+        "z": "453a7cf5.9b0a04",
+        "config_props": {
+            "name": "",
+            "init_nvs_netif_evt_loop": "true",
+            "init_nvs": "true",
+            "auth_mode": "1",
+            "pmf_capable": "true",
+            "pmf_required": "false",
+            "wifi_channel": "1"
+        },
+        "outputProps": {},
+        "dependency_set": {}
+    }
+]
