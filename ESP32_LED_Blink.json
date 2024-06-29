@@ -1,1 +1,87 @@
-[{"type":"system","config_props":{"global_vars":[]}},{"id":"cd3bb897.7bfdf8","type":"tab","label":"Flow 1","disabled":false,"info":""},{"id":"5a616dc9.40f724","type":"common/1/on interval","z":"cd3bb897.7bfdf8","config_props":{"name":"","interval":"1"},"outputProps":{},"dependency_set":{},"x":100,"y":200,"wires":[["f007face.cac058"]]},{"id":"f007face.cac058","type":"smow_pin/1/write","z":"cd3bb897.7bfdf8","config_props":{"name":"","pin_number":"23","level":"1"},"outputProps":{},"dependency_set":{},"x":280,"y":200,"wires":[["1a69b761.048119"]]},{"id":"1a69b761.048119","type":"common/1/delay","z":"cd3bb897.7bfdf8","config_props":{"name":"","period":"1"},"outputProps":{},"dependency_set":{},"x":440,"y":200,"wires":[["964ef8f8.ab31c8"]]},{"id":"964ef8f8.ab31c8","type":"smow_pin/1/write","z":"cd3bb897.7bfdf8","config_props":{"name":"","pin_number":"23","level":"0"},"outputProps":{},"dependency_set":{},"x":620,"y":200,"wires":[["9a99482d.e1e9b8"]]},{"id":"9a99482d.e1e9b8","type":"common/1/delay","z":"cd3bb897.7bfdf8","config_props":{"name":"","period":"1"},"outputProps":{},"dependency_set":{},"x":780,"y":200,"wires":[[]]}]
+[
+    {
+        "type": "system",
+        "config_props": {
+            "global_vars": []
+        }
+    },
+    {
+        "id": "6a1728df.43ecd8",
+        "type": "tab",
+        "label": "main",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a57fd1f2.83c37",
+        "type": "common/1/on interval",
+        "z": "6a1728df.43ecd8",
+        "config_props": {
+            "name": "",
+            "interval": "2"
+        },
+        "outputProps": {},
+        "dependency_set": {},
+        "x": 190,
+        "y": 120,
+        "wires": [
+            [
+                "1151a2b1.d6209d"
+            ]
+        ]
+    },
+    {
+        "id": "1151a2b1.d6209d",
+        "type": "smow_pin/1/write",
+        "z": "6a1728df.43ecd8",
+        "config_props": {
+            "name": "",
+            "pin_number": "23",
+            "level": "1"
+        },
+        "outputProps": {},
+        "dependency_set": {},
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "41c1b32d.81b25c"
+            ]
+        ]
+    },
+    {
+        "id": "41c1b32d.81b25c",
+        "type": "common/1/delay",
+        "z": "6a1728df.43ecd8",
+        "config_props": {
+            "name": "",
+            "period": "1"
+        },
+        "outputProps": {},
+        "dependency_set": {},
+        "x": 540,
+        "y": 120,
+        "wires": [
+            [
+                "f5e13ae5.ac3328"
+            ]
+        ]
+    },
+    {
+        "id": "f5e13ae5.ac3328",
+        "type": "smow_pin/1/write",
+        "z": "6a1728df.43ecd8",
+        "config_props": {
+            "name": "",
+            "pin_number": "23",
+            "level": "0"
+        },
+        "outputProps": {},
+        "dependency_set": {},
+        "x": 700,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    }
+]
